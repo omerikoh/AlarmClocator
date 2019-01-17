@@ -135,7 +135,9 @@ class AddScreen: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "LabelSelectionCell", for: indexPath) as? LabelSelectionCell else {
                 fatalError("Cannot dequeue LabelSelectionCell cell")
             }
-            cell.labelTextField.text = self.text
+            if chosenAlarmIndex != nil {
+                cell.labelTextField.text = self.text
+            }
             return cell
         }
         if indexPath.row == 1 {
