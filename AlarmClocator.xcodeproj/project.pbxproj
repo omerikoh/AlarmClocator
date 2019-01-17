@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC7F44F321CD87600095FB2F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7F44F221CD87600095FB2F /* CoreLocation.framework */; };
+		DC7F44F521CFBFBC0095FB2F /* TimerSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */; };
+		DC7F44F721DB4DCC0095FB2F /* SoundSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44F621DB4DCC0095FB2F /* SoundSelectionCell.swift */; };
+		DC7F44F921DB55470095FB2F /* SoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44F821DB55470095FB2F /* SoundTableViewController.swift */; };
+		DC7F44FB21DE04600095FB2F /* GeneralSoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44FA21DE04600095FB2F /* GeneralSoundCell.swift */; };
+		DC7F44FD21E146AC0095FB2F /* GeneralMainScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44FC21E146AC0095FB2F /* GeneralMainScreenCell.swift */; };
+		DC7F44FF21E34D8C0095FB2F /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44FE21E34D8C0095FB2F /* Alarm.swift */; };
+		DCC0F23621C8E7510089750B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0F23521C8E7510089750B /* MapViewController.swift */; };
+		DCD3562A21EE74D300F4AAFF /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3562921EE74D300F4AAFF /* DefaultsManager.swift */; };
 		DCEFEE6921BF9F29005701F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE6821BF9F29005701F5 /* AppDelegate.swift */; };
-		DCEFEE6B21BF9F29005701F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE6A21BF9F29005701F5 /* ViewController.swift */; };
 		DCEFEE6E21BF9F29005701F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEFEE6C21BF9F29005701F5 /* Main.storyboard */; };
 		DCEFEE7021BF9F2D005701F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEFEE6F21BF9F2D005701F5 /* Assets.xcassets */; };
 		DCEFEE7321BF9F2D005701F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEFEE7121BF9F2D005701F5 /* LaunchScreen.storyboard */; };
 		DCEFEE7E21BF9F2D005701F5 /* AlarmClocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE7D21BF9F2D005701F5 /* AlarmClocatorTests.swift */; };
+		DCEFEE8B21BF9FBA005701F5 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8821BF9FBA005701F5 /* MainTableView.swift */; };
+		DCEFEE8C21BF9FBA005701F5 /* AddScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8921BF9FBA005701F5 /* AddScreen.swift */; };
+		DCEFEE8D21BF9FBA005701F5 /* LabelSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8A21BF9FBA005701F5 /* LabelSelectionCell.swift */; };
+		DCEFEE8F21BFA848005701F5 /* LocationSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8E21BFA848005701F5 /* LocationSelectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC7F44F221CD87600095FB2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSelectionCell.swift; sourceTree = "<group>"; };
+		DC7F44F621DB4DCC0095FB2F /* SoundSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSelectionCell.swift; sourceTree = "<group>"; };
+		DC7F44F821DB55470095FB2F /* SoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewController.swift; sourceTree = "<group>"; };
+		DC7F44FA21DE04600095FB2F /* GeneralSoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSoundCell.swift; sourceTree = "<group>"; };
+		DC7F44FC21E146AC0095FB2F /* GeneralMainScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralMainScreenCell.swift; sourceTree = "<group>"; };
+		DC7F44FE21E34D8C0095FB2F /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		DCC0F23521C8E7510089750B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DCD3562921EE74D300F4AAFF /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		DCEFEE6521BF9F29005701F5 /* AlarmClocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEFEE6821BF9F29005701F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCEFEE6A21BF9F29005701F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCEFEE6D21BF9F29005701F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCEFEE6F21BF9F2D005701F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCEFEE7221BF9F2D005701F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +56,10 @@
 		DCEFEE7921BF9F2D005701F5 /* AlarmClocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEFEE7D21BF9F2D005701F5 /* AlarmClocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClocatorTests.swift; sourceTree = "<group>"; };
 		DCEFEE7F21BF9F2D005701F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEFEE8821BF9FBA005701F5 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		DCEFEE8921BF9FBA005701F5 /* AddScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddScreen.swift; sourceTree = "<group>"; };
+		DCEFEE8A21BF9FBA005701F5 /* LabelSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSelectionCell.swift; sourceTree = "<group>"; };
+		DCEFEE8E21BFA848005701F5 /* LocationSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7F44F321CD87600095FB2F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC7F44F121CD87600095FB2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC7F44F221CD87600095FB2F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCEFEE5C21BF9F29005701F5 = {
 			isa = PBXGroup;
 			children = (
 				DCEFEE6721BF9F29005701F5 /* AlarmClocator */,
 				DCEFEE7C21BF9F2D005701F5 /* AlarmClocatorTests */,
 				DCEFEE6621BF9F29005701F5 /* Products */,
+				DC7F44F121CD87600095FB2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +111,19 @@
 		DCEFEE6721BF9F29005701F5 /* AlarmClocator */ = {
 			isa = PBXGroup;
 			children = (
+				DCEFEE8821BF9FBA005701F5 /* MainTableView.swift */,
+				DC7F44FC21E146AC0095FB2F /* GeneralMainScreenCell.swift */,
+				DCD3562921EE74D300F4AAFF /* DefaultsManager.swift */,
+				DC7F44FE21E34D8C0095FB2F /* Alarm.swift */,
+				DCEFEE8921BF9FBA005701F5 /* AddScreen.swift */,
+				DCEFEE8A21BF9FBA005701F5 /* LabelSelectionCell.swift */,
+				DCEFEE8E21BFA848005701F5 /* LocationSelectionCell.swift */,
+				DCC0F23521C8E7510089750B /* MapViewController.swift */,
+				DC7F44F621DB4DCC0095FB2F /* SoundSelectionCell.swift */,
+				DC7F44F821DB55470095FB2F /* SoundTableViewController.swift */,
+				DC7F44FA21DE04600095FB2F /* GeneralSoundCell.swift */,
+				DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */,
 				DCEFEE6821BF9F29005701F5 /* AppDelegate.swift */,
-				DCEFEE6A21BF9F29005701F5 /* ViewController.swift */,
 				DCEFEE6C21BF9F29005701F5 /* Main.storyboard */,
 				DCEFEE6F21BF9F2D005701F5 /* Assets.xcassets */,
 				DCEFEE7121BF9F2D005701F5 /* LaunchScreen.storyboard */,
@@ -146,6 +191,11 @@
 				TargetAttributes = {
 					DCEFEE6421BF9F29005701F5 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					DCEFEE7821BF9F2D005701F5 = {
 						CreatedOnToolsVersion = 10.1;
@@ -197,8 +247,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCEFEE6B21BF9F29005701F5 /* ViewController.swift in Sources */,
+				DC7F44FB21DE04600095FB2F /* GeneralSoundCell.swift in Sources */,
+				DC7F44F521CFBFBC0095FB2F /* TimerSelectionCell.swift in Sources */,
+				DCEFEE8B21BF9FBA005701F5 /* MainTableView.swift in Sources */,
+				DCC0F23621C8E7510089750B /* MapViewController.swift in Sources */,
+				DCEFEE8F21BFA848005701F5 /* LocationSelectionCell.swift in Sources */,
+				DCEFEE8D21BF9FBA005701F5 /* LabelSelectionCell.swift in Sources */,
+				DCD3562A21EE74D300F4AAFF /* DefaultsManager.swift in Sources */,
 				DCEFEE6921BF9F29005701F5 /* AppDelegate.swift in Sources */,
+				DC7F44F721DB4DCC0095FB2F /* SoundSelectionCell.swift in Sources */,
+				DC7F44FD21E146AC0095FB2F /* GeneralMainScreenCell.swift in Sources */,
+				DCEFEE8C21BF9FBA005701F5 /* AddScreen.swift in Sources */,
+				DC7F44F921DB55470095FB2F /* SoundTableViewController.swift in Sources */,
+				DC7F44FF21E34D8C0095FB2F /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
