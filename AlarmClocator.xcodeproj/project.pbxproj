@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC560ED521F2339D00D2B9F5 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		DC7F44F221CD87600095FB2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSelectionCell.swift; sourceTree = "<group>"; };
 		DC7F44F621DB4DCC0095FB2F /* SoundSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSelectionCell.swift; sourceTree = "<group>"; };
@@ -111,10 +112,12 @@
 		DCEFEE6721BF9F29005701F5 /* AlarmClocator */ = {
 			isa = PBXGroup;
 			children = (
+				DCEFEE6821BF9F29005701F5 /* AppDelegate.swift */,
 				DCEFEE8821BF9FBA005701F5 /* MainTableView.swift */,
 				DC7F44FC21E146AC0095FB2F /* GeneralMainScreenCell.swift */,
 				DCD3562921EE74D300F4AAFF /* DefaultsManager.swift */,
 				DC7F44FE21E34D8C0095FB2F /* Alarm.swift */,
+				DC560ED521F2339D00D2B9F5 /* Location.gpx */,
 				DCEFEE8921BF9FBA005701F5 /* AddScreen.swift */,
 				DCEFEE8A21BF9FBA005701F5 /* LabelSelectionCell.swift */,
 				DCEFEE8E21BFA848005701F5 /* LocationSelectionCell.swift */,
@@ -123,7 +126,6 @@
 				DC7F44F821DB55470095FB2F /* SoundTableViewController.swift */,
 				DC7F44FA21DE04600095FB2F /* GeneralSoundCell.swift */,
 				DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */,
-				DCEFEE6821BF9F29005701F5 /* AppDelegate.swift */,
 				DCEFEE6C21BF9F29005701F5 /* Main.storyboard */,
 				DCEFEE6F21BF9F2D005701F5 /* Assets.xcassets */,
 				DCEFEE7121BF9F2D005701F5 /* LaunchScreen.storyboard */,

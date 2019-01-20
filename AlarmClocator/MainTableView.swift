@@ -16,7 +16,7 @@ class MainTableView: UITableViewController, CLLocationManagerDelegate {
     
     var alarms: [Alarm] = []
     
-    let requestAuthorization = CLLocationManager()
+    let locationManager = CLLocationManager()
     
     
     @IBAction func unwindToMainTableView(segue: UIStoryboardSegue) {}
@@ -24,8 +24,28 @@ class MainTableView: UITableViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        requestAuthorization.requestAlwaysAuthorization()
+        self.locationManager.requestAlwaysAuthorization()
+        /*
+        let geofenceRegionCenter = CLLocationCoordinate2D(
+            latitude: 37.3349285,
+            longitude: -122.011033
+        )
         
+        /* Create a region centered on desired location,
+         choose a radius for the region (in meters)
+         choose a unique identifier for that region */
+        let geofenceRegion = CLCircularRegion(
+            center: geofenceRegionCenter,
+            radius: 100,
+            identifier: "UniqueIdentifier"
+        )
+        
+        
+        geofenceRegion.notifyOnEntry = true
+        geofenceRegion.notifyOnExit = false
+        
+        self.locationManager.startMonitoring(for: geofenceRegion)
+        */
         NotificationCenter.default.addObserver(self, selector: #selector(changeStatus(notification:)), name: .AlarmSwitchChanged, object: nil)
         
         // Creating the edit button

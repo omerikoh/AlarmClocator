@@ -11,7 +11,7 @@ import MapKit
 import AVFoundation
 import AudioToolbox
 
-struct Alarm: Codable {
+struct Alarm: Codable, Equatable {
     var locationLongitude: Double
     var locationLatitude: Double
     var locationName: String
@@ -22,6 +22,8 @@ struct Alarm: Codable {
     
     var isOn: Bool
     
+    var identifier: String
+    
     init(locationLongitude: Double, locationLatitude: Double, locationName: String, soundName: String, soundId: SystemSoundID, countDown: TimeInterval?, label: String, isOn: Bool = true) {
         self.locationLongitude = locationLongitude
         self.locationLatitude = locationLatitude
@@ -31,5 +33,6 @@ struct Alarm: Codable {
         self.countDown = countDown
         self.label = label
         self.isOn = isOn
+        self.identifier = UUID().uuidString
     }
 }

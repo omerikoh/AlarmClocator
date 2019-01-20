@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import AVFoundation
 import AudioToolbox
+import CoreLocation
 
 class AddScreen: UITableViewController {
     
@@ -49,6 +50,7 @@ class AddScreen: UITableViewController {
             
             var alarms = UserDefaults.getAlarms()
             let alarm = Alarm(locationLongitude: destination!.longitude, locationLatitude: destination!.latitude ,locationName: destinationName!, soundName: soundName!, soundId: soundId!, countDown: countDown, label: text!, isOn: alarmOn)
+            print("latitude: \(alarm.locationLatitude) longitude: \(alarm.locationLongitude)")
             if sentFromEdit {
                 alarms[chosenAlarmIndex!] = alarm
                 print(alarm)
@@ -56,7 +58,26 @@ class AddScreen: UITableViewController {
                 alarms.append(alarm)
             }
             UserDefaults.setAlarms(alarms)
-            //performSegue(withIdentifier: "unwindToMainTableView", sender: self)
+            let geofenceRegionCenter = CLLocationCoordinate2D(
+                latitude: alarm.locationLatitude,
+                longitude: alarm.locationLongitude
+            )
+            
+            /* Create a region centered on desired location,
+             choose a radius for the region (in meters)
+             choose a unique identifier for that region */
+            let geofenceRegion = CLCircularRegion(
+                center: geofenceRegionCenter,
+                radius: 100,
+                identifier: alarm.identifier
+            )
+            
+            
+            geofenceRegion.notifyOnEntry = true
+            geofenceRegion.notifyOnExit = false
+            
+            CLLocationManager().startMonitoring(for: geofenceRegion)
+
             dismiss(animated: true, completion: nil) 
         } else {
             let alert = UIAlertController(title: "Alert", message: "Need to fill all fields", preferredStyle: .alert)
