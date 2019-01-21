@@ -25,6 +25,23 @@
 		DCEFEE8C21BF9FBA005701F5 /* AddScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8921BF9FBA005701F5 /* AddScreen.swift */; };
 		DCEFEE8D21BF9FBA005701F5 /* LabelSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8A21BF9FBA005701F5 /* LabelSelectionCell.swift */; };
 		DCEFEE8F21BFA848005701F5 /* LocationSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFEE8E21BFA848005701F5 /* LocationSelectionCell.swift */; };
+		DCF26EF921F5C929006A846C /* Bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF821F5C398006A846C /* Bloom.caf */; };
+		DCF26EFA21F5C9B4006A846C /* Anticipate.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF721F5C398006A846C /* Anticipate.caf */; };
+		DCF26EFB21F5C9B9006A846C /* Calypso.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF521F5C398006A846C /* Calypso.caf */; };
+		DCF26EFC21F5C9BE006A846C /* Choo_Choo.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF421F5C397006A846C /* Choo_Choo.caf */; };
+		DCF26EFD21F5C9C2006A846C /* Descent.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF621F5C398006A846C /* Descent.caf */; };
+		DCF26EFE21F5C9C4006A846C /* Fanfare.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EE921F5C37C006A846C /* Fanfare.caf */; };
+		DCF26EFF21F5C9C7006A846C /* Ladder.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF121F5C37D006A846C /* Ladder.caf */; };
+		DCF26F0021F5C9CA006A846C /* Minuet.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EEF21F5C37D006A846C /* Minuet.caf */; };
+		DCF26F0121F5C9CC006A846C /* News_Flash.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EEE21F5C37D006A846C /* News_Flash.caf */; };
+		DCF26F0221F5C9CF006A846C /* Noir.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF021F5C37D006A846C /* Noir.caf */; };
+		DCF26F0321F5C9D2006A846C /* Sherwood_Forest.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EE821F5C37C006A846C /* Sherwood_Forest.caf */; };
+		DCF26F0421F5C9D5006A846C /* Spell.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF221F5C37D006A846C /* Spell.caf */; };
+		DCF26F0521F5C9DA006A846C /* Suspense.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EF321F5C37D006A846C /* Suspense.caf */; };
+		DCF26F0621F5C9DD006A846C /* Telegraph.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EEA21F5C37C006A846C /* Telegraph.caf */; };
+		DCF26F0721F5C9E0006A846C /* Tiptoes.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EEC21F5C37D006A846C /* Tiptoes.caf */; };
+		DCF26F0821F5C9E3006A846C /* Typewriters.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EED21F5C37D006A846C /* Typewriters.caf */; };
+		DCF26F0921F5C9E6006A846C /* Update.caf in Resources */ = {isa = PBXBuildFile; fileRef = DCF26EEB21F5C37C006A846C /* Update.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +78,23 @@
 		DCEFEE8921BF9FBA005701F5 /* AddScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddScreen.swift; sourceTree = "<group>"; };
 		DCEFEE8A21BF9FBA005701F5 /* LabelSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSelectionCell.swift; sourceTree = "<group>"; };
 		DCEFEE8E21BFA848005701F5 /* LocationSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionCell.swift; sourceTree = "<group>"; };
+		DCF26EE821F5C37C006A846C /* Sherwood_Forest.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sherwood_Forest.caf; sourceTree = "<group>"; };
+		DCF26EE921F5C37C006A846C /* Fanfare.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fanfare.caf; sourceTree = "<group>"; };
+		DCF26EEA21F5C37C006A846C /* Telegraph.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Telegraph.caf; sourceTree = "<group>"; };
+		DCF26EEB21F5C37C006A846C /* Update.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Update.caf; sourceTree = "<group>"; };
+		DCF26EEC21F5C37D006A846C /* Tiptoes.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tiptoes.caf; sourceTree = "<group>"; };
+		DCF26EED21F5C37D006A846C /* Typewriters.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Typewriters.caf; sourceTree = "<group>"; };
+		DCF26EEE21F5C37D006A846C /* News_Flash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = News_Flash.caf; sourceTree = "<group>"; };
+		DCF26EEF21F5C37D006A846C /* Minuet.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minuet.caf; sourceTree = "<group>"; };
+		DCF26EF021F5C37D006A846C /* Noir.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Noir.caf; sourceTree = "<group>"; };
+		DCF26EF121F5C37D006A846C /* Ladder.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ladder.caf; sourceTree = "<group>"; };
+		DCF26EF221F5C37D006A846C /* Spell.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spell.caf; sourceTree = "<group>"; };
+		DCF26EF321F5C37D006A846C /* Suspense.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suspense.caf; sourceTree = "<group>"; };
+		DCF26EF421F5C397006A846C /* Choo_Choo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Choo_Choo.caf; sourceTree = "<group>"; };
+		DCF26EF521F5C398006A846C /* Calypso.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calypso.caf; sourceTree = "<group>"; };
+		DCF26EF621F5C398006A846C /* Descent.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Descent.caf; sourceTree = "<group>"; };
+		DCF26EF721F5C398006A846C /* Anticipate.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anticipate.caf; sourceTree = "<group>"; };
+		DCF26EF821F5C398006A846C /* Bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bloom.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +146,7 @@
 		DCEFEE6721BF9F29005701F5 /* AlarmClocator */ = {
 			isa = PBXGroup;
 			children = (
+				DCF26EE721F5C319006A846C /* Sounds */,
 				DCEFEE6821BF9F29005701F5 /* AppDelegate.swift */,
 				DCEFEE8821BF9FBA005701F5 /* MainTableView.swift */,
 				DC7F44FC21E146AC0095FB2F /* GeneralMainScreenCell.swift */,
@@ -141,6 +176,30 @@
 				DCEFEE7F21BF9F2D005701F5 /* Info.plist */,
 			);
 			path = AlarmClocatorTests;
+			sourceTree = "<group>";
+		};
+		DCF26EE721F5C319006A846C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DCF26EF721F5C398006A846C /* Anticipate.caf */,
+				DCF26EF821F5C398006A846C /* Bloom.caf */,
+				DCF26EF521F5C398006A846C /* Calypso.caf */,
+				DCF26EF421F5C397006A846C /* Choo_Choo.caf */,
+				DCF26EF621F5C398006A846C /* Descent.caf */,
+				DCF26EE921F5C37C006A846C /* Fanfare.caf */,
+				DCF26EF121F5C37D006A846C /* Ladder.caf */,
+				DCF26EEF21F5C37D006A846C /* Minuet.caf */,
+				DCF26EEE21F5C37D006A846C /* News_Flash.caf */,
+				DCF26EF021F5C37D006A846C /* Noir.caf */,
+				DCF26EE821F5C37C006A846C /* Sherwood_Forest.caf */,
+				DCF26EF221F5C37D006A846C /* Spell.caf */,
+				DCF26EF321F5C37D006A846C /* Suspense.caf */,
+				DCF26EEA21F5C37C006A846C /* Telegraph.caf */,
+				DCF26EEC21F5C37D006A846C /* Tiptoes.caf */,
+				DCF26EED21F5C37D006A846C /* Typewriters.caf */,
+				DCF26EEB21F5C37C006A846C /* Update.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +288,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF26F0621F5C9DD006A846C /* Telegraph.caf in Resources */,
+				DCF26F0321F5C9D2006A846C /* Sherwood_Forest.caf in Resources */,
+				DCF26EFF21F5C9C7006A846C /* Ladder.caf in Resources */,
+				DCF26EFE21F5C9C4006A846C /* Fanfare.caf in Resources */,
 				DCEFEE7321BF9F2D005701F5 /* LaunchScreen.storyboard in Resources */,
+				DCF26EFD21F5C9C2006A846C /* Descent.caf in Resources */,
+				DCF26F0121F5C9CC006A846C /* News_Flash.caf in Resources */,
 				DCEFEE7021BF9F2D005701F5 /* Assets.xcassets in Resources */,
+				DCF26EFA21F5C9B4006A846C /* Anticipate.caf in Resources */,
+				DCF26F0421F5C9D5006A846C /* Spell.caf in Resources */,
+				DCF26EF921F5C929006A846C /* Bloom.caf in Resources */,
+				DCF26F0521F5C9DA006A846C /* Suspense.caf in Resources */,
+				DCF26EFC21F5C9BE006A846C /* Choo_Choo.caf in Resources */,
+				DCF26F0821F5C9E3006A846C /* Typewriters.caf in Resources */,
+				DCF26F0021F5C9CA006A846C /* Minuet.caf in Resources */,
+				DCF26EFB21F5C9B9006A846C /* Calypso.caf in Resources */,
+				DCF26F0221F5C9CF006A846C /* Noir.caf in Resources */,
+				DCF26F0921F5C9E6006A846C /* Update.caf in Resources */,
 				DCEFEE6E21BF9F29005701F5 /* Main.storyboard in Resources */,
+				DCF26F0721F5C9E0006A846C /* Tiptoes.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

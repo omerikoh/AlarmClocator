@@ -53,8 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // customize your notification content
             let content = UNMutableNotificationContent()
             content.body = alarm.label
-            content.sound = UNNotificationSound.default
-            
+            content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "\(alarm.soundName).caf"))            
             // when the notification will be triggered
             let timeInSeconds: TimeInterval = alarm.countDown ?? 1
             // the actual trigger object
