@@ -24,16 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.locationManager = CLLocationManager()
         self.locationManager!.delegate = self
         
-        // get the singleton object
+        // Get the singleton object
         self.notificationCenter = UNUserNotificationCenter.current()
         
-        // register as it's delegate
+        // Register as it's delegate
         notificationCenter.delegate = self
         
-        // define what do you need permission to use
+        // Define what do you need permission to use
         let options: UNAuthorizationOptions = [.alert, .sound]
         
-        // request permission
+        // Request permission
         notificationCenter.requestAuthorization(options: options) { (granted, error) in
             if !granted {
                 print("Permission not granted")
@@ -48,31 +48,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func handleEvent(forRegion region: CLRegion!) {
-        var alarms = UserDefaults.getAlarms()
+        let alarms = UserDefaults.getAlarms()
         for alarm in alarms.filter({ $0.identifier == region.identifier && $0.isOn }) {
-            // customize your notification content
+            // Customize your notification content
             let content = UNMutableNotificationContent()
             content.body = alarm.label
             content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "\(alarm.soundName).caf"))            
-            // when the notification will be triggered
+            // When the notification will be triggered
             let timeInSeconds: TimeInterval = alarm.countDown ?? 1
-            // the actual trigger object
+            // The actual trigger object
             let trigger = UNTimeIntervalNotificationTrigger(
                 timeInterval: timeInSeconds,
                 repeats: false
             )
             
-            // notification unique identifier, for this example, same as the region to avoid duplicate notifications
+            // Notification unique identifier, for this example, same as the region to avoid duplicate notifications
             let identifier = alarm.identifier
             
-            // the notification request object
+            // The notification request object
             let request = UNNotificationRequest(
                 identifier: identifier,
                 content: content,
                 trigger: trigger
             )
             
-            // trying to add the notification request to notification center
+            // Trying to add the notification request to notification center
             notificationCenter.add(request, withCompletionHandler: { (error) in
                 if error != nil {
                     print("Error adding notification with identifier: \(identifier)")
@@ -80,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
             //let index = alarms.index(of: alarm)!
             //alarms[index].isOn = false
-            UserDefaults.setAlarms(alarms)
+            //UserDefaults.setAlarms(alarms)
         }
     }
 

@@ -19,12 +19,13 @@ struct Alarm: Codable, Equatable {
     var soundId: SystemSoundID
     var countDown: TimeInterval?
     var label: String
+    var segmentIndex: Int
     
     var isOn: Bool
     
     var identifier: String
     
-    init(locationLongitude: Double, locationLatitude: Double, locationName: String, soundName: String, soundId: SystemSoundID, countDown: TimeInterval?, label: String, isOn: Bool = true) {
+    init(locationLongitude: Double, locationLatitude: Double, locationName: String, soundName: String, soundId: SystemSoundID, countDown: TimeInterval?, label: String, segmentIndex: Int,isOn: Bool = true) {
         self.locationLongitude = locationLongitude
         self.locationLatitude = locationLatitude
         self.locationName = locationName
@@ -32,6 +33,7 @@ struct Alarm: Codable, Equatable {
         self.soundId = soundId
         self.countDown = countDown
         self.label = label
+        self.segmentIndex = segmentIndex
         self.isOn = isOn
         self.identifier = UUID().uuidString
     }

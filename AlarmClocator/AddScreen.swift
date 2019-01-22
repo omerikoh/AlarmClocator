@@ -30,10 +30,12 @@ class AddScreen: UITableViewController {
     
     var alarmOn: Bool = true
     
+    var segmentIndex: Int = 0
+    
     
     @IBAction func saveAlarm(_ sender: Any) {
         // The next 3 lines get the chosen timer countdown
-        let timerSelectionCellIndexPath = IndexPath(row: 3, section: 0)
+        let timerSelectionCellIndexPath = IndexPath(row: 4, section: 0)
         let timerCell = self.tableView.cellForRow(at: timerSelectionCellIndexPath) as! TimerSelectionCell
         let countDown = shouldExpandTimerCell ? timerCell.timerScroller.countDownDuration : nil
         
@@ -43,13 +45,18 @@ class AddScreen: UITableViewController {
         let labelCell = self.tableView.cellForRow(at: labelCellIndexPath) as! LabelSelectionCell
         text = labelCell.labelTextField.hasText ? labelCell.labelTextField.text : labelCell.labelTextField.placeholder
         
+        // The next 3 lines get the chosen segment
+        let notifyOnCellIndexPath = IndexPath(row: 3, section: 0)
+        let notifyOnCell = self.tableView.cellForRow(at: notifyOnCellIndexPath) as! NotifyOnSelectionCell
+        segmentIndex = notifyOnCell.segmentController.selectedSegmentIndex
+        
         
         // Checking if all fields have information
         if destination != nil && soundName != nil {
             // Getting the existing UserDefaults and decoding them
             
             var alarms = UserDefaults.getAlarms()
-            let alarm = Alarm(locationLongitude: destination!.longitude, locationLatitude: destination!.latitude ,locationName: destinationName!, soundName: soundName!, soundId: soundId!, countDown: countDown, label: text!, isOn: alarmOn)
+            let alarm = Alarm(locationLongitude: destination!.longitude, locationLatitude: destination!.latitude ,locationName: destinationName!, soundName: soundName!, soundId: soundId!, countDown: countDown, label: text!, segmentIndex: segmentIndex, isOn: alarmOn)
             print("latitude: \(alarm.locationLatitude) longitude: \(alarm.locationLongitude)")
             if sentFromEdit {
                 alarms[chosenAlarmIndex!] = alarm
@@ -71,10 +78,10 @@ class AddScreen: UITableViewController {
                 radius: 100,
                 identifier: alarm.identifier
             )
-            
-            
-            geofenceRegion.notifyOnEntry = true
-            geofenceRegion.notifyOnExit = false
+            //////////////////////////////////////
+            /////////////////////////////////////
+            geofenceRegion.notifyOnEntry = segmentIndex == 0
+            geofenceRegion.notifyOnExit = segmentIndex != 0
             
             CLLocationManager().startMonitoring(for: geofenceRegion)
 
@@ -96,6 +103,8 @@ class AddScreen: UITableViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(changeStatus(notification:)), name: .TimerSwitchChanged, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(changeIndex(notification:)), name: .SegmentIndexhChanged, object: nil)
+        
         if chosenAlarmIndex != nil {
             let alarms = UserDefaults.getAlarms()
             let alarm = alarms[chosenAlarmIndex!]
@@ -107,6 +116,8 @@ class AddScreen: UITableViewController {
             // Placing the edited alarm on AddScreen - sound
             self.soundName = alarm.soundName
             self.soundId = alarm.soundId
+            // Placing the edited alarm on AddScreen - segment
+            self.segmentIndex = alarm.segmentIndex
             //Placing the edited alarm on AddScreen - timer
             if alarm.countDown != nil {
                 self.shouldExpandTimerCell = true
@@ -135,6 +146,15 @@ class AddScreen: UITableViewController {
         
     }
     
+    @objc func changeIndex(notification: NSNotification) {
+        segmentIndex = notification.userInfo!["index"] as! Int
+        
+        self.tableView.beginUpdates()
+        
+        self.tableView.endUpdates()
+        
+    }
+    
     
     
     
@@ -147,7 +167,7 @@ class AddScreen: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -176,6 +196,13 @@ class AddScreen: UITableViewController {
             return cell
         }
         if indexPath.row == 3 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "NotifyOnSelectionCell", for: indexPath) as? NotifyOnSelectionCell else {
+                fatalError("Cannot dequeue cell")
+            }
+            cell.segmentController.selectedSegmentIndex = self.segmentIndex
+            return cell
+        }
+        if indexPath.row == 4 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "TimerSelectionCell", for: indexPath) as? TimerSelectionCell else {
                 fatalError("Cannot dequeue TimerSelectionCell cell")
             }
@@ -190,7 +217,7 @@ class AddScreen: UITableViewController {
     
     //this function controlls the cell's size
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath == IndexPath(row: 3, section: 0) && self.shouldExpandTimerCell == true {
+        if indexPath == IndexPath(row: 4, section: 0) && self.shouldExpandTimerCell == true {
             return 234
         }
         

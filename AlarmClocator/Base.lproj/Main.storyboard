@@ -192,8 +192,39 @@
                                     <segue destination="exh-I1-LJB" kind="show" id="IjY-td-JDP"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotifyOnSelectionCell" rowHeight="40" id="xks-x7-0i3" customClass="NotifyOnSelectionCell" customModule="AlarmClocator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="156" width="375" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xks-x7-0i3" id="ATO-EQ-5Re" customClass="TimerSelectionCell" customModule="AlarmClocator" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notify on:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtt-RL-4re">
+                                            <rect key="frame" x="16" y="9" width="75" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWi-OB-UL7">
+                                            <rect key="frame" x="241" y="6" width="121" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Entry"/>
+                                                <segment title="Exit"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="didChangeState:" destination="xks-x7-0i3" eventType="valueChanged" id="KM3-6e-jxw"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="segmentController" destination="cWi-OB-UL7" id="Thg-ES-MD9"/>
+                                </connections>
+                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimerSelectionCell" rowHeight="234" id="eXz-A4-jsr" customClass="TimerSelectionCell" customModule="AlarmClocator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="156" width="375" height="234"/>
+                                <rect key="frame" x="0.0" y="196" width="375" height="234"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eXz-A4-jsr" id="nv5-8a-JcA" customClass="TimerSelectionCell" customModule="AlarmClocator" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="233.5"/>
@@ -254,7 +285,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTZ-20-aMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="K33-f2-6Kk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="249" y="851"/>
+            <point key="canvasLocation" x="248.80000000000001" y="850.52473763118451"/>
         </scene>
         <!--Sounds-->
         <scene sceneID="qt5-Vp-Wq8">

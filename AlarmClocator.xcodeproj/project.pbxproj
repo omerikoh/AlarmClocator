@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC44DCB821F5CE4800AA358B /* NotifyOnSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC44DCB721F5CE4800AA358B /* NotifyOnSelectionCell.swift */; };
 		DC7F44F321CD87600095FB2F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7F44F221CD87600095FB2F /* CoreLocation.framework */; };
 		DC7F44F521CFBFBC0095FB2F /* TimerSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */; };
 		DC7F44F721DB4DCC0095FB2F /* SoundSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F44F621DB4DCC0095FB2F /* SoundSelectionCell.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC44DCB721F5CE4800AA358B /* NotifyOnSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyOnSelectionCell.swift; sourceTree = "<group>"; };
 		DC560ED521F2339D00D2B9F5 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		DC7F44F221CD87600095FB2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSelectionCell.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				DC7F44F621DB4DCC0095FB2F /* SoundSelectionCell.swift */,
 				DC7F44F821DB55470095FB2F /* SoundTableViewController.swift */,
 				DC7F44FA21DE04600095FB2F /* GeneralSoundCell.swift */,
+				DC44DCB721F5CE4800AA358B /* NotifyOnSelectionCell.swift */,
 				DC7F44F421CFBFBC0095FB2F /* TimerSelectionCell.swift */,
 				DCEFEE6C21BF9F29005701F5 /* Main.storyboard */,
 				DCEFEE6F21BF9F2D005701F5 /* Assets.xcassets */,
@@ -329,6 +332,7 @@
 				DC7F44F521CFBFBC0095FB2F /* TimerSelectionCell.swift in Sources */,
 				DCEFEE8B21BF9FBA005701F5 /* MainTableView.swift in Sources */,
 				DCC0F23621C8E7510089750B /* MapViewController.swift in Sources */,
+				DC44DCB821F5CE4800AA358B /* NotifyOnSelectionCell.swift in Sources */,
 				DCEFEE8F21BFA848005701F5 /* LocationSelectionCell.swift in Sources */,
 				DCEFEE8D21BF9FBA005701F5 /* LabelSelectionCell.swift in Sources */,
 				DCD3562A21EE74D300F4AAFF /* DefaultsManager.swift in Sources */,
