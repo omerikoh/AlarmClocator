@@ -75,7 +75,7 @@ class AddScreen: UITableViewController {
              choose a unique identifier for that region */
             let geofenceRegion = CLCircularRegion(
                 center: geofenceRegionCenter,
-                radius: 100,
+                radius: 5,
                 identifier: alarm.identifier
             )
             //////////////////////////////////////
