@@ -178,11 +178,6 @@ extension MapViewController: HandleMapSearch {
                 let annotations = self.myMapView.annotations
                 self.myMapView.removeAnnotations(annotations)
                 
-                //getting data
-                let latitude = response?.boundingRegion.center.latitude
-                let longitude = response?.boundingRegion.center.longitude
-                UserDefaults.standard.set(latitude, forKey: "latitude")
-                
                 //create annotation
                 let annotation = MKPointAnnotation()
                 annotation.title = placemark.title
@@ -195,11 +190,11 @@ extension MapViewController: HandleMapSearch {
                 }
                 
                 //zooming-in on annotation
-                let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude!, longitude!)
+                let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(annotation.coordinate.latitude, annotation.coordinate.longitude)
                 
                 //adding the requested location coordinates to a variable
                 self.location = coordinate
-                let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01) //means how much we want to be assumed in
+                let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
                 let region = MKCoordinateRegion(center: coordinate, span: span)
                 self.myMapView.setRegion(region, animated: true)
                 
