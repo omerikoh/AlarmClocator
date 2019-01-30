@@ -368,22 +368,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="top" secondItem="n1p-sm-l9d" secondAttribute="top" id="0Hb-YD-OT9"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="top" secondItem="n1p-sm-l9d" secondAttribute="top" id="2gj-CQ-3ra"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="trailing" secondItem="n1p-sm-l9d" secondAttribute="trailing" id="64I-Du-cLp"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="leading" secondItem="n1p-sm-l9d" secondAttribute="leading" id="DyQ-kb-SZn"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="bottom" secondItem="n1p-sm-l9d" secondAttribute="bottom" id="EcZ-t7-SaZ"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="leading" secondItem="n1p-sm-l9d" secondAttribute="leading" id="ONR-fv-rAW"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="leading" secondItem="n1p-sm-l9d" secondAttribute="leading" id="SGu-iV-HnO"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="bottom" secondItem="n1p-sm-l9d" secondAttribute="bottom" id="To3-R4-8Yy"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="trailing" secondItem="n1p-sm-l9d" secondAttribute="trailing" id="WNh-fg-u1G"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="bottom" secondItem="n1p-sm-l9d" secondAttribute="bottom" id="afS-yJ-Xap"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="trailing" secondItem="n1p-sm-l9d" secondAttribute="trailing" id="d2I-ht-j6T"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="top" secondItem="n1p-sm-l9d" secondAttribute="top" id="glZ-zN-kfJ"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="bottom" secondItem="n1p-sm-l9d" secondAttribute="bottom" id="iWB-BC-gIr"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="trailing" secondItem="n1p-sm-l9d" secondAttribute="trailing" id="jLW-qy-Mu5"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="leading" secondItem="n1p-sm-l9d" secondAttribute="leading" id="jrm-2U-Kdy"/>
-                            <constraint firstItem="c8S-gY-uFh" firstAttribute="top" secondItem="n1p-sm-l9d" secondAttribute="top" id="sn8-3c-jBv"/>
+                            <constraint firstItem="c8S-gY-uFh" firstAttribute="leading" secondItem="n1p-sm-l9d" secondAttribute="leading" id="PYF-sF-MOE"/>
+                            <constraint firstItem="c8S-gY-uFh" firstAttribute="trailing" secondItem="n1p-sm-l9d" secondAttribute="trailing" id="VaB-Sb-AFf"/>
+                            <constraint firstItem="c8S-gY-uFh" firstAttribute="top" secondItem="n1p-sm-l9d" secondAttribute="top" id="x5T-7D-dEJ"/>
+                            <constraint firstItem="c8S-gY-uFh" firstAttribute="bottom" secondItem="Kjn-8a-xfr" secondAttribute="bottom" id="xdX-Ed-Mgp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n1p-sm-l9d"/>
                     </view>

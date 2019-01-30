@@ -17,13 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FLV-DA-7x7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clocator" translatesAutoresizingMaskIntoConstraints="NO" id="2u5-z0-Jsg">
+                                <rect key="frame" x="0.0" y="143.5" width="375" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2u5-z0-Jsg" secondAttribute="height" multiplier="321:325" id="qnf-fi-I9k"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label" translatesAutoresizingMaskIntoConstraints="NO" id="xkI-q7-0f9">
+                                <rect key="frame" x="0.0" y="545" width="375" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xkI-q7-0f9" secondAttribute="height" multiplier="375:122" id="0I3-KG-BM4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xkI-q7-0f9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4X2-v8-uKI"/>
+                            <constraint firstItem="FLV-DA-7x7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5md-ni-hyM"/>
+                            <constraint firstItem="FLV-DA-7x7" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="8ZN-In-J1W"/>
+                            <constraint firstItem="2u5-z0-Jsg" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="DRO-uI-HRF"/>
+                            <constraint firstItem="2u5-z0-Jsg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IGY-P9-D8x"/>
+                            <constraint firstItem="FLV-DA-7x7" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="Lf2-uw-zV8"/>
+                            <constraint firstItem="xkI-q7-0f9" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="ZYl-sL-MlS"/>
+                            <constraint firstItem="2u5-z0-Jsg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iLb-Eh-iMX"/>
+                            <constraint firstItem="FLV-DA-7x7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="nKE-N6-d55"/>
+                            <constraint firstItem="xkI-q7-0f9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wbN-I7-3bz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="376.79998779296875" height="500.6400146484375"/>
+        <image name="clocator" width="321.60000610351562" height="325.92001342773438"/>
+        <image name="label" width="364.79998779296875" height="96"/>
+    </resources>
 </document>
