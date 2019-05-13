@@ -105,6 +105,11 @@ class MainTableView: UITableViewController, CLLocationManagerDelegate {
         // This command changes the label's name
         cell.alarmLabel.text = alarms[indexPath.row].label
         cell.alarmLocation.text = alarms[indexPath.row].locationName
+        if alarms[indexPath.row].segmentIndex == 0 {
+            cell.alarmState.text = "Entry"
+        } else {
+            cell.alarmState.text = "Exit"
+        }
         cell.alarmSwitch.isOn = alarms[indexPath.row].isOn
         cell.alarmSwitch.tag = indexPath.row
         
@@ -142,6 +147,7 @@ class MainTableView: UITableViewController, CLLocationManagerDelegate {
             if let cell = tableView.cellForRow(at: IndexPath(row: row, section: 0)) as? GeneralMainScreenCell {
                 cell.alarmSwitch.isHidden = self.isEditing
                 cell.alarmTimer.isHidden = self.isEditing
+                cell.alarmState.isHidden = self.isEditing
             }
         }
     }

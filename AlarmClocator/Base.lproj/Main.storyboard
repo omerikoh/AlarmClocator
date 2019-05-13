@@ -54,11 +54,19 @@
                                             <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnR-Lt-NLF">
+                                            <rect key="frame" x="317" y="55" width="41" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="alarmLabel" destination="9kD-fv-G2I" id="Ftv-c2-Dly"/>
                                     <outlet property="alarmLocation" destination="p06-SB-v0H" id="vVj-pu-psT"/>
+                                    <outlet property="alarmState" destination="SnR-Lt-NLF" id="HbX-9m-NNM"/>
                                     <outlet property="alarmSwitch" destination="EIt-QP-gMh" id="AFg-3G-wrs"/>
                                     <outlet property="alarmTimer" destination="uqT-XC-gWg" id="cB5-Rp-wpc"/>
                                 </connections>

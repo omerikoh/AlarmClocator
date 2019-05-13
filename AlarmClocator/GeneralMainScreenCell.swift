@@ -16,6 +16,8 @@ class GeneralMainScreenCell: UITableViewCell {
     
     @IBOutlet weak var alarmTimer: UILabel!
     
+    @IBOutlet weak var alarmState: UILabel!
+    
     @IBOutlet weak var alarmSwitch: UISwitch!
     
     
