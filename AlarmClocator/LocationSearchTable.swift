@@ -28,25 +28,27 @@ class LocationSearchTable: UITableViewController {
             (selectedItem.subAdministrativeArea != nil || selectedItem.administrativeArea != nil) ? ", " : ""
         
         // For example put a space between "Washington" and "DC"
-        let secondSpace = (selectedItem.subAdministrativeArea != nil &&
+        let secondSpace = ((selectedItem.locality != nil || selectedItem.subAdministrativeArea != nil) &&
             selectedItem.administrativeArea != nil) ? " " : ""
-        
-        let addressLine = String(
-            format:"%@%@%@%@%@%@%@",
+
+        let addressComponents: [String?] = [
             // street number
-            selectedItem.subThoroughfare ?? "",
+            selectedItem.subThoroughfare,
             firstSpace,
             // street name
-            selectedItem.thoroughfare ?? "",
+            selectedItem.thoroughfare,
             comma,
             // city
-            selectedItem.locality ?? "",
+            selectedItem.locality,
             secondSpace,
             // state
-            selectedItem.administrativeArea ?? ""
-        )
-        
-        return addressLine
+            selectedItem.administrativeArea
+        ].filter({ $0 != nil })
+        if let addressComponents = addressComponents as? [String] {
+            return addressComponents.joined()
+        }
+
+        return "Address unavailable"
     }
     
 }
