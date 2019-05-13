@@ -18,6 +18,7 @@ class AddScreen: UITableViewController {
     var destinationName: String?
     
     var shouldExpandTimerCell = false
+    var countDown: TimeInterval?
     
     var soundName: String?
     var soundId: SystemSoundID?
@@ -87,7 +88,7 @@ class AddScreen: UITableViewController {
 
             dismiss(animated: true, completion: nil) 
         } else {
-            let alert = UIAlertController(title: "Alert", message: "Need to fill all fields", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Failed to save!", message: "You need to fill all fields", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
@@ -121,6 +122,7 @@ class AddScreen: UITableViewController {
             //Placing the edited alarm on AddScreen - timer
             if alarm.countDown != nil {
                 self.shouldExpandTimerCell = true
+                self.countDown = alarm.countDown
             }
             self.tableView.reloadData()
             self.sentFromEdit = true
@@ -207,6 +209,9 @@ class AddScreen: UITableViewController {
                 fatalError("Cannot dequeue TimerSelectionCell cell")
             }
             cell.timerSwitch.isOn = self.shouldExpandTimerCell
+            if let countDown = self.countDown, self.shouldExpandTimerCell {
+                cell.timerScroller.countDownDuration = countDown
+            }
             return cell
         }
         
