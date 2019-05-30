@@ -18,6 +18,7 @@ struct SystemSounds {
 
 class SoundTableViewController: UITableViewController {
 
+    // Contains the names of the sounds and their id
     let sounds = [SystemSounds(name: "Anticipate", id: 1020), SystemSounds(name: "Bloom", id: 1021), SystemSounds(name: "Calypso", id: 1022), SystemSounds(name: "Choo Choo", id: 1023), SystemSounds(name: "Descent", id: 1024), SystemSounds(name: "Fanfare", id: 1025), SystemSounds(name: "Ladder", id: 1026), SystemSounds(name: "Minuet", id: 1027), SystemSounds(name: "News Flash", id: 1028), SystemSounds(name: "Noir", id: 1029), SystemSounds(name: "Sherwood Forest", id: 1030), SystemSounds(name: "Spell", id: 1031), SystemSounds(name: "Suspense", id: 1032), SystemSounds(name: "Telegraph", id: 1033), SystemSounds(name: "Tiptoes", id: 1034), SystemSounds(name: "Typewriters", id: 1035), SystemSounds(name: "Update", id: 1036)]
 
 
