@@ -146,7 +146,7 @@ extension MapViewController: HandleMapSearch {
         //Ignoring user
         UIApplication.shared.beginIgnoringInteractionEvents()
         
-        //Activity indicator
+        //Activity indicator- shows the user's location
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.style = UIActivityIndicatorView.Style.gray
         activityIndicator.center = self.view.center

@@ -9,6 +9,7 @@
 import UIKit
 
 extension UserDefaults {
+    // Decoding the UserDefault
     static func getAlarms() -> [Alarm] {
         if let encoded = UserDefaults.standard.data(forKey: "Alarms") {
             do {
@@ -22,6 +23,7 @@ extension UserDefaults {
         return [Alarm]()
     }
     
+    // Encoding the UserDefault
     static func setAlarms(_ alarms: [Alarm]) {
         do {
             // Sending the UserDefaults and encoding them
